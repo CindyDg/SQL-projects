@@ -1,0 +1,5 @@
+CREATE TABLE Book_list_database (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+INSERT INTO Book_list_database VALUES (1, "The Smartest Guys in the Room",5);
+INSERT INTO Book_list_database VALUES (2," Going Public",3);
+INSERT INTO Book_list_database VALUES (3, " Mindset",4);
+SELECT * FROM Book_list_database;
