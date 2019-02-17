@@ -1,0 +1,24 @@
+CREATE TABLE CindyStore (id INTEGER PRIMARY KEY, Product TEXT, Cost_Marking INTEGER, Selling_Price INTEGER, Quantity_Sold  INTEGER);
+
+INSERT INTO CindyStore VALUES (1, "Maxi Dresses",30, 40, 100);
+INSERT INTO CindyStore VALUES (2, "Flower Dresses for Summer", 35, 45, 150);
+INSERT INTO CindyStore VALUES (3, "Denim Jackets",45, 55, 150);
+INSERT INTO CindyStore VALUES (4, "Denim Trousers",25, 35, 50);
+INSERT INTO CindyStore VALUES (5, "Floral Skirts", 30, 40, 200);
+INSERT INTO CindyStore VALUES (6, "Wrap shirts", 35, 45, 200);
+INSERT INTO CindyStore VALUES (7, "Sweaters", 30, 40, 200);
+INSERT INTO CindyStore VALUES (8, "Winter Coats", 60, 80, 150);
+INSERT INTO CindyStore VALUES (9, "Jumpers", 40, 50, 100);
+INSERT INTO CindyStore VALUES (10, "Woolens", 50, 60, 80);
+INSERT INTO CindyStore VALUES (11, "Swim suits", 30, 40, 70);
+INSERT INTO CindyStore VALUES (12, "Evening Dresses", 50, 60, 100);
+INSERT INTO CindyStore VALUES (13, "Work Dresses", 40, 50, 80);
+INSERT INTO CindyStore VALUES (14, "Boots", 50, 60, 100);
+INSERT INTO CindyStore VALUES (15, "Playsuits", 50, 60, 100);
+SELECT * FROM  CindyStore;
+SELECT * FROM CindyStore ORDER BY Product;
+SELECT * FROM CindyStore WHERE Quantity_Sold > 100;
+SELECT MAX (Quantity_Sold) FROM CindyStore;
+SELECT SUM (Quantity_Sold) FROM CindyStore;
+SELECT Product, SUM ( Quantity_Sold) FROM CindyStore GROUP BY Product;
+SELECT * FROM CindyStore ORDER BY Quantity_Sold;
