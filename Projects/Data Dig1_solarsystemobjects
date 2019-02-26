@@ -1,9 +1,4 @@
-/* Put your data in here and query it! */
-/* 
-Solar system objects
-Adapted from: http://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size
-Collected by: https://www.khanacademy.org/profile/patrick809/programs
-*/
+
 CREATE TABLE solar_system_objects(
   body TEXT
 , mean_radius NUMERIC         /* km */
