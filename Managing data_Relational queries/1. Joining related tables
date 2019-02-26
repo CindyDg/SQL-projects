@@ -1,0 +1,18 @@
+CREATE TABLE company_information (id INTEGER PRIMARY KEY,
+    company_name TEXT,
+    headquater TEXT,
+    website TEXT,
+    revenue TEXT,
+    market_value_of_the_deal TEXT);
+
+INSERT INTO company_information (company_name, headquater, website, revenue,  market_value_of_the_deal)
+    VALUES ("American Express", "New York", "www.americanexpress.com", "US$ 33.48 billion", "US$ 14.5 billion");
+INSERT INTO company_information (company_name, headquater, website, revenue, market_value_of_the_deal)
+    VALUES ("Apple", "California", "www.apple.com", "US$ 265.595 billion", "US$ 40.3 billion");
+INSERT INTO company_information (company_name, headquater, website, revenue, market_value_of_the_deal)
+    VALUES ("Bank of America", "North Carolina", "www.bankofamerica.com", "US$ 91.24 billion", "US$ 22.6 billion");
+INSERT INTO company_information (company_name, headquater, website, revenue, market_value_of_the_deal)
+    VALUES ("BNY Mellon", "New York", "www.BNYMellon.com", "US$ 14.54 billion", "US$ 4 billion"); 
+
+select * from company_information;
+
